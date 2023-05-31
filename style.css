@@ -221,20 +221,22 @@ span {
     align-items: center;
     margin-left: 10rem;
     margin-right: 10rem;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(0,0,0,0.1);
     border-radius: 50px;
     /* box-shadow: 2px 2px 2px 2px whitesmoke; */
+    /* box-shadow: 3px 3px 8px 8px wheat; */
+    box-shadow: 2px 2px 15px 15px rgba(255, 255,255, 0.3);
     
-   
-    
-
-
 }
+/* .about:hover{
+    box-shadow: 3px 3px 8px 8px rgba(255, 255,255, 0.2);
+} */
 
 .flex {
     display: flex;
     /* border: 2px solid snow;
     padding-left: 0; */
+    
 }
 
 .abouth1:hover {
@@ -280,12 +282,13 @@ span {
     text-shadow: 2px 1px #EA047E;
     /* float: left; */
     margin-right: 1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     /* margin-top: 10px; */
 }
 
 .myimg {
-    border: 5px solid;
+    /* border: 5px solid; */
+    border-radius: 100%;
     float: left;
     width: 18rem;
     height: 15rem;
@@ -294,10 +297,13 @@ span {
     margin-top: 5rem;
     
 }
+.myimg:hover{
+    box-shadow: 2px 2px 15px 15px wheat;
+}
 
 /* border animation */
 
-@property --angle {
+/* @property --angle {
     syntax: '<angle>';
     initial-value: 900deg;
     inherits: true;
@@ -325,7 +331,7 @@ span {
 }
 
 .myimg {
-    /* border: 0.35rem solid; */
+    /* border: 0.35rem solid; 
     border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.71turn, var(--c2) 0.25turn) 30;
     animation: borderRotate var(--d) linear infinite forwards;
     border-radius: 100%;
@@ -335,7 +341,7 @@ span {
     100% {
         --angle: 420deg;
     }
-}
+} */
 
 /* .btn {
     position: absolute;
