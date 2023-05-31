@@ -247,6 +247,8 @@ span {
     font-family: 'Roboto Slab', serif;
     font-size: 50px;
     text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
     background-image: linear-gradient(-225deg,
             #231557 0%,
             #44107a 29%,
@@ -293,12 +295,12 @@ span {
     width: 18rem;
     height: 15rem;
     /* border-radius: 100%; */
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-top: 5rem;
     
 }
 .myimg:hover{
-    box-shadow: 2px 2px 15px 15px wheat;
+    box-shadow: 2px 2px 15px 15px rgba(255, 255,255, 0.3);
 }
 
 /* border animation */
@@ -408,6 +410,10 @@ span {
     .flex {
         display: block;
     }
+    .about{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
     .abouth1 {
         font-size: 30px;
@@ -416,19 +422,20 @@ span {
 
     .bio {
 
-        font-size: 18px;
+         font-size: 18px;
         /* border: 2px solid aliceblue; */
         /* position: absolute; */
         word-spacing: 4px;
-        /* text-indent: 50px; */
+        /* text-indent: 50px;*/ 
         text-shadow: 2px 1px #EA047E;
-        margin-left: 12px;
-        margin-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
        margin-top: 0;
-        position: absolute;
-        /* position:relative; */
-        top: 930px;
-        text-shadow: 1px 1px #EA047E;
+        /* position: absolute; */
+         position:relative; 
+         margin-top: 14rem;
+        /* top: 930px;
+        text-shadow: 1px 1px #EA047E; */ 
 
     }
 
@@ -440,10 +447,14 @@ span {
         top: 700px;
         left: 50%;
         margin-left: 0;
+        padding-left: 0;
+        margin-top: 150px;
+        /* margin-left: 20px;
+        padding-left: 20px; */
 
         transform: translate(-50%, -50%);
-        /* bottom: 15rem; */
-        /* margin-top: 400px; */
+         /* bottom: 15rem;  */
+         /* margin-top: 400px;  */
     }
     /* .btn{
         position: absolute;
@@ -614,10 +625,14 @@ span {
         padding-right: 0;
     }
     .academics{
-        margin-top: 680px;
+        margin-top: 0;
         position: relative;
-        padding-top: 60px;
+        padding-top: 30px;
     }
+}
+
+.courses{
+    margin-top: 30px;
 }
 
 
