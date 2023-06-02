@@ -8,6 +8,7 @@
     <title>Asmita's Portfolio</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"> 
 
 
@@ -17,7 +18,7 @@
 <body>
     <!-- navbar -->
 
-    <section class="navbar1"data-aos="fade-in">
+    <section class="navbar1"data-aos="fade-in" id="nav">
         <header class="header active">
             <!-- <img src="MYIMG.jpg" alt="loading..." class="myimg"> -->
             <h1 class="heading">Asmita's Portfolio</h1>
@@ -28,7 +29,7 @@
                     <li><a class="anchor" href="#">Courses</a></li>
                     <li><a class="anchor" href="#">Skills</a></li>
                     <li><a class="anchor" href="#">Projects</a></li>
-                    <li><a class="anchor" href="#">Contact Me</a></li>
+                    <!-- <li><a class="anchor" href="#">Contact Me</a></li> -->
 
                 </ul>
 
@@ -82,7 +83,7 @@
     <!-- academics section -->'
     
     <section class="academics" id="academic">
-        <h2 class="education">Education</h2>
+        <h2 class="education"data-aos="fade-up">Education</h2>
         <div class="timeline padding1">
             <div class="timeline-item"data-aos="fade-in">
                 <div class="timeline-dot"></div>
@@ -110,7 +111,7 @@
         <div class="timeline padding1">
             <div class="timeline-item"data-aos="fade-in">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2020-2024</div>
+                <div class="timeline-date">2020-24</div>
                 <div class="timeline-content">
                     <h2>Bachelor of Technology in Computer Science</h2>
                     <h3>Medi-Caps University</h3>
@@ -126,6 +127,28 @@
 
         <h2 class="education">Courses</h2>
 
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="bgimg.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="bgimg.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="bgimg.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+
         
 
     </section>
@@ -138,28 +161,14 @@
       AOS.init(
         {
             offset : 300,
-        duration : 2000
+        duration : 2500
     }
       );
     </script>
-    <script src="three.r134.min.js"></script>
-    <script src="vanta.net.min.js"></script>
-    <script>
-    VANTA.NET({
-      el: ".introduction",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x3ff3ff,
-      points: 4.00,
-      maxDistance: 17.00,
-      spacing: 17.00
-    })
-    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    
     <script src="index.js"></script>
 
 
