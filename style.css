@@ -250,29 +250,26 @@ span {
     text-align: center;
     padding-top: 30px;
     margin-bottom: 30px;
-    background-image: linear-gradient(-225deg,
-            #231557 0%,
-            #44107a 29%,
-            #ff1361 67%,
-            #fff800 100%);
+    color: #fff;
+    /* background-image: white;
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-    /* text-fill-color: transparent; */
+    /* text-fill-color: transparent; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
+    animation: textclip 2s linear infinite; */
 
 
 }
 
-@keyframes textclip {
+/* @keyframes textclip {
     to {
         background-position: 100% center;
     }
-}
+} */
 
 .bio {
     color: aliceblue;
@@ -485,7 +482,7 @@ span {
     font-family: 'Roboto Slab', serif;
     font-size: 50px;
     text-align: center;
-    background-image: linear-gradient(-225deg,
+    /* background-image: linear-gradient(-225deg,
             #231557 0%,
             #44107a 29%,
             #ff1361 67%,
@@ -495,20 +492,21 @@ span {
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-    /* text-fill-color: transparent; */
+    /* text-fill-color: transparent; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip1 2s linear infinite;
+    animation: textclip1 2s linear infinite; */
+    color: #fff;
     
 
 
 }
 
-@keyframes textclip1 {
+/* @keyframes textclip1 {
     to {
         background-position: 100% center;
     }
-}
+} */
 
 
 .timeline{
@@ -659,68 +657,45 @@ margin-left: 0px;
     /* line-height: 0.5px; */
 }
 
-.courseimg{
-    height: 250px;
-    /* width: 40px; */
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-bottom: 50px;
-    opacity: 0.5;
-    margin-top: 30px;
-    
-    
-}
-.corouselhead{
-    text-align: center;
-    position: relative;
-    bottom:5rem;
-    right: 10rem;
-    color: #ffffff;
-    
-}
-
-.next{
-    left: 65.5%;
-    position: relative;
-    bottom:7rem; 
-    /* background: white; */
-    /* color: #ffffff; */
-    width: 25px;
-    height:25px;
-    color: #fff;
-
-
-}
-
-.certificate{
-    
-    text-align: center;
-    position: relative;
-    bottom: 9rem;
-    left: 21%;
-}
-.certificate:hover{
-    cursor: pointer;
-    
-}
-.anchorcer{
-    color: #fff;
-    
-}
-.anchorcer:hover{
-    color: #fff;
-    text-decoration: underline;
-
-}
 .carousel-control-prev{
-    margin-left: 150px;
-    margin-bottom: 125px;
+    /* margin-left: 400px; */
+    display: none;
+    
 }
 .carousel-control-next{
-    margin-right: 150px;
-    margin-bottom: 125px;
+    /* margin-right: 400px; */
+    display: none;
+   
 }
+.card{
+    margin-left: 39.5%;
+    background-color: black;
+    border: 2px solid seashell;
+}
+.certificate{
+    font-family: inherits;
+}
+.btn{
+    background-color: #222324;
+    border: 2px solid seashell;
+}
+.btn:hover{
+    background-color: #2D2727;
+    border: 2px solid seashell;
+    
+}
+.card-title{
+    color: #fff;
+}
+@media (max-width:60rem){
+    .carousel-item{
+        width: 100%;
+    }
+    .carousel-inner{
+        padding-right: 43.5%;
 
+    }
+}
 
 
 
