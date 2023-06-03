@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Dancing+Script:wght@500&family=Merriweather:wght@300;400&family=Montserrat:wght@700&family=Open+Sans&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300&family=Roboto&family=Roboto+Slab:wght@300&family=Sacramento&family=Source+Serif+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Dancing+Script:wght@500&family=M+PLUS+1p:wght@100&family=Merriweather:wght@300;400&family=Montserrat:wght@700&family=Open+Sans&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300&family=Roboto&family=Roboto+Slab:wght@300&family=Sacramento&family=Source+Serif+Pro:ital,wght@1,300&display=swap');
 
 
 body {
@@ -648,6 +648,77 @@ margin-left: 0px;
 
 .courses{
     margin-top: 30px;
+}
+
+.head4{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    /* line-height: 0.5px; */
+}
+
+.courseimg{
+    height: 250px;
+    /* width: 40px; */
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 50px;
+    opacity: 0.5;
+    margin-top: 30px;
+    
+    
+}
+.corouselhead{
+    text-align: center;
+    position: relative;
+    bottom:5rem;
+    right: 10rem;
+    color: #ffffff;
+    
+}
+
+.next{
+    left: 65.5%;
+    position: relative;
+    bottom:7rem; 
+    /* background: white; */
+    /* color: #ffffff; */
+    width: 25px;
+    height:25px;
+    color: #fff;
+
+
+}
+
+.certificate{
+    
+    text-align: center;
+    position: relative;
+    bottom: 9rem;
+    left: 21%;
+}
+.certificate:hover{
+    cursor: pointer;
+    
+}
+.anchorcer{
+    color: #fff;
+    
+}
+.anchorcer:hover{
+    color: #fff;
+    text-decoration: underline;
+
+}
+.carousel-control-prev{
+    margin-left: 150px;
+    margin-bottom: 125px;
+}
+.carousel-control-next{
+    margin-right: 150px;
+    margin-bottom: 125px;
 }
 
 
