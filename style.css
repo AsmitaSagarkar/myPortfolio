@@ -99,6 +99,8 @@ li:hover{
     display: none;
 }
 
+
+
 /* responsive navbar */
 @media (max-width : 60rem) {
     .mobilenav {
@@ -218,7 +220,7 @@ span {
     text-align: center;
     justify-content: center;
     /* border: 2px solid snow; */
-    margin-top: 5rem;
+    margin-top: 7rem;
     align-items: center;
     margin-left: 10rem;
     margin-right: 10rem;
@@ -475,6 +477,7 @@ span {
 .academics{
     /* min-height: 100vh; */
     padding: 0px 15px;
+    margin-top: 7rem;
     
 
 }
@@ -645,7 +648,7 @@ margin-left: 0px;
 }
 
 .courses{
-    margin-top: 30px;
+    margin-top: 7rem;
 }
 
 .head4{
@@ -668,9 +671,11 @@ margin-left: 0px;
    
 }
 .card{
-    margin-left: 39.5%;
+    display: block;
+    /* margin-left: 39.5%; */
     background-color: black;
     border: 2px solid seashell;
+    margin-top: 20px;
 }
 .certificate{
     font-family: inherits;
@@ -687,14 +692,25 @@ margin-left: 0px;
 .card-title{
     color: #fff;
 }
+.gif{
+    position: absolute;
+    top:2150px;
+    height: 35rem;
+   
+}
 @media (max-width:60rem){
-    .carousel-item{
-        width: 100%;
+    .gif{
+        /* top:2200px;
+        transform: translate(-50px, -50px); */
+        position: initial;
+        display: grid;
+        place-items: center;
     }
-    .carousel-inner{
-        padding-right: 43.5%;
+    
+}
 
-    }
+.skills{
+    margin-top: 7rem;
 }
 
 
