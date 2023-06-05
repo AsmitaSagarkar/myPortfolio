@@ -714,6 +714,87 @@ margin-left: 0px;
 }
 
 
+/* floating icons */
+
+.ficons{
+    position: fixed;
+    right: 0;
+    top: 60%;
+    transform: translate(0 -50%);
+    -webkit-transform: translate(0 -50%);
+    -ms-transform: translate(0 -50%);
+    z-index: 200;
+}
+.ficons ul{
+    padding: initial;
+}
+.ficons ul li{
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    /* margin-top: 5px; */
+    color: #fff;
+    /* background-color: #000; */
+}
+.socialicons{
+    height: 25px;
+    width: 25px;
+}
+.facebook{
+background-color: #3b5998;
+}
+.linkedin{
+    background-color: #007bb5;
+}
+.twitter{
+    background-color: #55acee;
+}
+.instagram{
+    background-color: #ff4800;
+}
+
+.github{
+    background-color: #000;
+}
+.resume{
+    background-color: #ff4880;
+}
+.facebook:hover{
+    background-color: #245ace;
+    }
+    .linkedin:hover{
+        background-color: #035175;
+    }
+    .twitter:hover{
+        background-color: #168ee9;
+    }
+    .instagram:hover{
+        background-color: #922c04;
+    }
+    
+    .github:hover{
+        background-color: #3d3b3b;
+    }
+    .resume:hover{
+        background-color: #e21653;
+    }
+
+@media (max-width:60rem){
+    .socialicons{
+        height: 20px;
+        width: 20px;
+    }
+    .ficons ul li{
+        height: 30px;
+        width: 30px;
+        
+    }
+}
+
+
+
 
 
 
