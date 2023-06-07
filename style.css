@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Dancing+Script:wght@500&family=M+PLUS+1p:wght@100&family=Merriweather:wght@300;400&family=Montserrat:wght@700&family=Open+Sans&family=Playfair+Display:wght@500&family=Red+Hat+Display:wght@300&family=Roboto&family=Roboto+Slab:wght@300&family=Sacramento&family=Source+Serif+Pro:ital,wght@1,300&display=swap');
 
 
-body {
+
+html,body {
+    max-width: 100%;
     margin: 0px;
     padding: 0px;
     /* font-family: 'Roboto Slab', serif; */
     box-sizing: border-box;
     overflow-x: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     background-color: black;
+    
    
 }
 
 /* html{
-    overflow-x: hidden;
+    over.flow-x: hidden;
 } */
 /* section 1 */
 
@@ -671,6 +674,7 @@ margin-left: 0px;
    
 }
 .card{
+    width: 18rem;
     display: block;
     /* margin-left: 39.5%; */
     background-color: black;
@@ -705,6 +709,14 @@ margin-left: 0px;
         position: initial;
         display: grid;
         place-items: center;
+        height: 400px;
+    }
+    .card{
+        width: 15rem;
+    }
+    .gif img{
+        height: 430px;
+        width: 430px;
     }
     
 }
@@ -712,6 +724,7 @@ margin-left: 0px;
 .skills{
     margin-top: 7rem;
 }
+
 
 
 /* floating icons */
@@ -792,7 +805,11 @@ background-color: #3b5998;
         
     }
 }
-
+.col{
+    color: white;
+    border: 2px solid white;
+    margin: 50px;
+}
 
 
 
