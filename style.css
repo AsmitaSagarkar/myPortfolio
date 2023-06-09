@@ -111,6 +111,8 @@ a {
     position: fixed;
     width: 100%;
     z-index: 500;
+    -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
     
 }
 
@@ -206,7 +208,7 @@ a {
 
 .image {
     width: 50%;
-    height: 400px;
+    height: 350px;
     float: right;
 
     /* margin-bottom: 7rem;*/
@@ -474,10 +476,10 @@ span {
         text-shadow: 2px 1px #EA047E;
         margin-left: 5px;
         margin-right: 5px;
-       margin-top: 0;
+       margin-top: 250px;
         /* position: absolute; */
          position:relative; 
-         margin-top: 14rem;
+         
         /* top: 930px;
         text-shadow: 1px 1px #EA047E; */ 
 
@@ -485,14 +487,20 @@ span {
 
     .myimg {
         /* border: 8px solid aliceblue; */
+        margin-top: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 12rem;
         height: 10rem;
         position: absolute;
         top: 800px;
-        left: 50%;
-        margin-left: 0;
+        left: 0;
+        right: 0;
+        
+        
         padding-left: 0;
-        margin-top: 180px;
+        margin-top: 100px;
         /* margin-left: 20px;
         padding-left: 20px; */
 
@@ -849,10 +857,27 @@ background-color: #3b5998;
         
     }
 }
+
+/* section 4 */
+
+.skills{
+    background: radial-gradient(610px, #2f85f58c, transparent 40%);
+}
 .col{
     color: white;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     margin: 50px;
+
+}
+.col:hover{
+    cursor: pointer;
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    
 }
 
 
