@@ -1,0 +1,13 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #071F30;
+    max-width: 100%;
+}
+
+form{
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
