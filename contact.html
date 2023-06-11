@@ -24,39 +24,43 @@
                 <img src="contactme.gif" alt="Loading...">
             </div>
             <div class="col" data-aos="slide-left">
-                <form>
+                <form name="submit-to-google-sheet">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <input type="email" name="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="Enter your email">
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput">Your Name</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput"
+                        <input type="text" name="Name" class="form-control" id="formGroupExampleInput"
                             placeholder="Enter your name">
                     </div>
 
                     <div class="form-group">
                         <label for="formGroupExampleInput">Your Message</label>
-                        <textarea cols="30" rows="5" class="form-control" id="formGroupExampleInput"
+                        <textarea cols="30" name="Message" rows="5" class="form-control" id="formGroupExampleInput"
                             placeholder="Write your message here"></textarea>
                     </div>
 
 
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+                
 
 
             </div>
         </div>
     </div>
-
+    <span id="msg"></span>
     <div class="social-profiles">
         <h1 data-aos="slide-left">Social Profiles</h1>
         <hr>
 
         <div class="container">
             <div class="row">
+                <div class="col">
+                    <a href="asmitasagarkar@gmail.com" target="_blank"> <ion-icon name="send-outline"class="socialicons"></ion-icon></ion-icon></a>
+                </div>
                 <div class="col">
                     <a href="https://github.com/AsmitaSagarkar" target="_blank"> <ion-icon class="socialicons"name="logo-github"></ion-icon></a>
                 </div>
@@ -107,6 +111,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwCKQz-gd4g7tZC30XxpxfhBRD6FZxmtMVU2otGHOTNOcaiC-vv_lweqDDErxTMi2Zn/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent successfully!"
+                    setInterval(function() {
+                        msg.innerHTML=""
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 </body>
 
 </html>
