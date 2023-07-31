@@ -9,8 +9,14 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        integrity="sha384-Gn5384xqQ1aoWX+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/nameLogo.png" type="image/x-icon">
+
+    <!-- fontawesome cdn     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main stylesheet -->
     <link rel="stylesheet" href="style.css">
 
 
@@ -19,32 +25,36 @@
 
 <body>
     <!-- navbar -->
+    <div class="whole">
 
-    <section class="navbar1" data-aos="fade-in" id="nav">
-        <header class="header">
-            <!-- <img src="MYIMG.jpg" alt="loading..." class="myimg"> -->
-            <h1 class="heading">Asmita Sagarkar</h1>
-            <nav class="nav1">
-                <ul class="item">
-                    <li><a class="anchor" href="#introduction">Introduction</a></li>
-                    <li><a class="anchor" href="#academic">Academics</a></li>
-                    <li><a class="anchor" href="#courses">Courses</a></li>
-                    <li><a class="anchor" href="#skills">Skills</a></li>
-                    <li><a class="anchor" href="#projects">Projects</a></li>
-                    <li><a class="anchor" href="contact.html" target="_blank">Contact Me</a></li>
-
-                    <!-- <li><a class="anchor" href="#">Contact Me</a></li> -->
-
-                </ul>
+        <section class="navbar1" id="nav">
+            <header class="header">
+                <!-- <img src="MYIMG.jpg" alt="loading..." class="myimg"> -->
+                <!-- <h1 class="heading"></h1> -->
+                <img src="images/nameLogo.png" class="heading" alt="">
+                <nav class="nav1">
+                    <ul class="item">
+                        <li><a class="anchor" href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+                        <li><a class="anchor" href="intro.html"><i class="fa-solid fa-user"></i></a></li>
+                        <li><a class="anchor" href="projects.html"><i class="fa-solid fa-briefcase"></i></a></li>
+                        <li><a class="anchor" href="#"><i class="fa-solid fa-globe" ></i></a></li>
+                        <!-- <li><a class="anchor" href="#"><i class="fa-brands fa-discourse"></i></a></li> -->
+                       
 
 
-            </nav>
-            <div class="mobilenav">
-                <ion-icon name="menu-outline" class="icon" class="border"></ion-icon>
-                <ion-icon name="close-circle-outline" class="icon"></ion-icon>
-            </div>
-        </header>
-    </section>
+                        <!-- <li><a class="anchor" href="#">Contact Me</a></li> -->
+
+                    </ul>
+
+
+                </nav>
+                <div class="mobilenav">
+                    <ion-icon name="menu-outline" class="icon" class="border"></ion-icon>
+                    <ion-icon name="close-circle-outline" class="icon"></ion-icon>
+                </div>
+            </header>
+        </section>
+    </div>
 
 
 
@@ -52,13 +62,29 @@
 
     <!-- section 2 -->
     <section class="mid">
-        <img src="gif.gif" alt="loading..." class="image">
-        <span class="para"></span>
+        <div class="left">
+            
+            <div class="leftside">
+            <span class="para"><span class="hi">Hi, I'm</span><span class="color" style="color: #27ae60;"> Asmita Sagarkar.</span><br><span class="iam"> I'm a </span><span style="color: #27ae60;" id="st"></span>
+                <div class="divintro">
+                <p class="intro">Knowledgeable in HTML, CSS, and JavaScript. Eager to apply skills in building
+                    interactive and visually appealing websites. Quick learner, detail-oriented, and committed to
+                    continuous growth in web development .</p></div>
+                <div class="button">
+                    <button class="btn1 commonbutton" id="btn1" >
+                        Download my CV</button>
+                    <button class="btn2 commonbutton" id="btn2">Read More</button>
+                </div>
+            </div>
+            <div class="rightside">
+                <img src="images/3dwoman.png" alt="loading..." class="image">
+            </div>
+        </div>
     </section>
 
 
     <!-- section 3 -->
-    <section class="about" id="introduction">
+    <!-- <section class="about" id="introduction">
 
         <div>
             <h2 class="abouth1">About Me</h2>
@@ -79,14 +105,12 @@
 
 
         </div>
-        <!-- <div class="button">
-            <button class="btn"><a class="resume" href="#">Download My Resume</a></button>
-        </div> -->
+        
 
-    </section>
+    </section> -->
     <!-- academics section -->'
 
-    <section class="academics" id="academic">
+    <!-- <section class="academics" id="academic">
         <h2 class="education">Education</h2>
         <div class="timeline padding1">
             <div class="timeline-item">
@@ -131,9 +155,9 @@
         </div>
 
 
-    </section>
+    </section> -->
     <!-- courses -->
-    <section class="courses" id="courses">
+    <!-- <section class="courses" id="courses">
 
         <h2 class="education">Courses</h2>
         <h4 class="head4">Courses I have done.</h4>
@@ -277,11 +301,11 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only"></span>
         </a>
-        </div>
+        </div> -->
 
 
 
-    </section><!-- Floating icon designs -->
+    <!-- </section>
 
     <div class="ficons">
 
@@ -296,11 +320,11 @@
             <a href="https://drive.google.com/file/d/1p5ZVhQAr6gnPuujCTYXJ42kexJl1e1t6/view?usp=sharing"target="_blank"><li class="resume"title="Check my Resume here"><ion-icon class="socialicons"name="document-outline"></ion-icon></li></a>
 
         </ul>
-    </div>
+    </div> -->
 
 
     <!-- section-4 -->
-    <section class="skills"id="skills">
+    <!-- <section class="skills"id="skills">
         <h2 class="education">Skills</h2>
         <h4 class="head4">Skills I have so far.</h4>
 
@@ -373,10 +397,10 @@
             </div>
           </div>
         
-    </section>
+    </section> -->
 
     <!-- section 5 -->
-    <section class="projects" id="projects">
+    <!-- <section class="projects" id="projects">
         <h2 class="education">Projects</h2>
         <h4 class="head4">Projects I have done so far.</h4>
 
@@ -472,12 +496,12 @@
               
 
         </div>
-    </section>
+    </section> -->
 
     <!-- footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <p>© Copyright 2023|Asmita Sagarkar</p>
-    </footer>
+    </footer> -->
 
 
 
@@ -507,7 +531,7 @@
 
 
 
-    
+
 
 
 </body>
