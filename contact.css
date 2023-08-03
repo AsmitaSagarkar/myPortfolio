@@ -2,150 +2,332 @@
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    background: linear-gradient(90deg, rgba(1, 12, 33, 1) 14%, rgba(25, 117, 201, 1) 100%, rgba(0, 212, 255, 1) 100%);
     max-width: 100%;
-    font-family: 'Patua One', cursive;
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Roboto Slab', serif; */
+    box-sizing: border-box;
     overflow-x: hidden;
+    /* overflow-y: scroll; */
+    /* background-color: #071f30; */
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #302e2e, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #302e2e, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    font-family:"Poppins", sans-serif;
+
 
 }
-hr{
-    border-top: 4px solid #fff;
-    margin-bottom: 30px;
-}
-
-h1 {
-    margin-top: 50px;
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
+.ab{
+    color: aliceblue;
+    text-shadow: none;
     
 }
-
-
-
-
-form {
-    color: #fff;
-    /* float: left;*/
-    margin-left: 4rem;
-    margin-top: 50px; 
-   
-    /* border: 2px solid rgba(0, 0, 0, 0.3); */
-    /* border-radius: 50px; */
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.2);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
+.me{
+    color: #27ae60;
+    text-shadow: none;
 }
 
-.back{
-    position: fixed;
+.h1 {
+    
+    text-align: center;
+    
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    
+
+
+}
+.h1 h1{
+    position: relative;
+    z-index: 1;
+    
+}
+.bgtext{
+    
+    
+    font-size: 5rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    color: #2a2e35;
+    text-shadow: none;
+}
+
+@media (max-width:60rem){
+    .bgtext{
+        color: #8187916e;
+        font-size: 4rem;
+    }
+}
+.hshape{
+    transition: all 0.4s ease-in-out;
+    width: 50%;
+    height: 100%;
+    background-color: #27ae60;
+    position: absolute;
     right: 0;
-    top: 90%;
-    transform: translate(0 -50%);
-    -webkit-transform: translate(0 -50%);
-    -ms-transform: translate(0 -50%);
-    z-index: 200;
+    top: 0;
+    z-index: 1;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+/* nav styling */
+
+
+/* .anchor{
+    color: aliceblue;
+}
+.nav{
+    z-index: 110;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+} */
+
+
+/* . */
+.nav{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+.item{
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    padding-left: 0;
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px;
     border-radius: 50px;
 }
-.back ul{
-    padding: initial;
+.item li{
+    list-style: none;
+    text-decoration: none;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 100%;
+}
+.nav .item li i{
+    color: aliceblue;
     
 }
-.back ul li{
-    height: 40px;
-    width: 40px;
-    list-style-type: none;
-    padding-left: 10px;
-    padding-top: 10px;
-    /* margin-top: 5px; */
-    color: #fff;
-    
-    /* background-color: #000; */
-    
-}
-.socialicons{
-    height: 25px;
-    width: 25px;
-}
-@media (max-width:60rem){
-    .socialicons{
-        height: 20px;
-        width: 20px;
-    }
-    .back{
-        top: 80;
-        padding-right: 10px;
-    }
-    .back ul li{
-        height: 30px;
-        width: 30px;
-        
-    }
-}
-.social-profiles{
-    margin-top: 7rem;
+.item li:hover{
+    background-color: #27ae60;
+    border-radius: 100%;
 }
 
-.socialicons{
-    color: #fff;
-    width: 40px;
-    height: 40px;
-}
-.form-control{
-    background-color:#ECF8F9;
-}
-.social-profiles .container{
-    padding-top: 50px;
-    
-}
-ion-icon:hover{
-    cursor: pointer;
-    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
-}
-.footer{
-    margin-top: 7rem;
-    text-align: center;
-    
-    margin-bottom: 0;
-    background-color:#03548664 ;
-    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
-}
-.footer p{
-    color: #fff;
-    margin-bottom: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 20px;
-    /* font-family: 'Merriweather Sans', sans-serif; */
-}
-#msg{
-    color: #fff;
-    text-align: center;
-    display: block;
-    color: green;
-}
 @media (max-width:60rem){
-    .image{
-        width: 300px;
-        height: 300px;
+    .item{
+        width: auto;
+        font-size: 15px;
     }
-    h1{
-        font-size: 40px;
+}
+/*Mid*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* margin-top: 20px;
+    margin-bottom: 100px; */
+    margin-left: 80px;
+    margin-right: 80px;
+    gap: 4rem;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid #27ae60;
+    border-radius: 100%; */
+    
+}
+.right{
+    z-index: 2;
+    display: flex;
+    /* flex-direction: column;*/
+    justify-content: center; 
+    align-items: center;
+}
+h1:hover{
+    cursor: pointer;
+
+}
+.socialIcons{
+    background-color: #252323;
+    width: auto;
+    padding: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 0 20px rgba(39, 174, 96, 0.5);
+}
+.img{
+    width: 10rem;
+    height:10rem;
+    border-radius: 100%;
+}
+.name{
+    margin-top: 20px;
+    font-size: 45px;
+    margin-bottom: 0;
+}
+.name2{
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.button{
+    background-color: #27ae60;
+    color: aliceblue;
+    margin-top: 20px;
+    width: auto;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 10px;
+    font-family:"Poppins", sans-serif;
+}
+.info{
+    color: #27ae60;
+    text-align: center;
+    margin-top: 0;
+    
+    
+    
+}
+/* .info span{
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+   
+}
+@keyframes flip{
+    0%,80% {
+        transform: rotateY(360deg) 
+      }
+} */
+.in:hover{
+    cursor: pointer;
+}
+.right button{
+    background-color: #27ae60;
+}
+.in .username{
+    word-break: break-all;
+    color: aliceblue;
+    font-size: 20px;
+   margin-left: 50px;
+}
+.username:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+    display: inline-block;
+    color: #27ae60;
+}
+.socialIcons ul{
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; */
+    line-height: 2.5;
+    list-style: none;
+    text-decoration: none;
+   
+}
+.socialIcons .in{
+    margin: 0;
+}
+
+.in i{
+    font-size: 30px;
+}
+
+
+i:hover{
+    transform: scale(1.5);
+    transition: 200ms ease;
+    
+}
+.text:hover{
+    color: aliceblue;
+}
+.iam{
+    color: #27ae60; 
+}
+
+
+@media (max-width : 60rem){
+    body{
+        background: linear-gradient(to right, #272829 50%, #27ae60 50%);
     }
     
-    form{
-        
-        margin-left: 0;
+    .grid{
+        grid-template-rows: 0.5fr 1fr;
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    }
+    img{
+        z-index: 100;
+    }
+    h2{
+        z-index: 101;
+
+    }
+    h4{
+        z-index: 102;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .hshape{
+        display: none;
+    }
+    .name2{
+        font-size: 25px;
+    }
+    .info{
+        font-size: 25px;
+    }
+    .in{
+        gap: 20px;
+    }
+    .socialIcons{
+        padding: 20px;
+    }
+    .me{
+        color: rgba(2, 19, 11, 0.678);
+    }
+    .iam{
+        display: block;
+        text-align: center;
+        color: aliceblue;
+    }
+    .username{
+        margin-left: 10px;
+    }
+    ul{
+        padding-left: 0;
     }
 }
