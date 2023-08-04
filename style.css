@@ -124,11 +124,6 @@ li a i:hover {
     cursor: pointer;
 }
 
-.icon {
-    width: 3rem;
-    height: 2rem;
-    color: aliceblue;
-}
 .item{
     margin-top: 0;
 }
@@ -391,7 +386,6 @@ span {
         padding-left: 10px;
         padding-right: 10px;
     }
-
     .hi {
         display: block;
         font-size: 30px;
