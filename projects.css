@@ -10,12 +10,7 @@ body {
     overflow-x: hidden;
     /* overflow-y: scroll; */
     /* background-color: #071f30; */
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #302e2e, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #302e2e, #000000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #171c23;
     background-attachment: fixed;
 
 
@@ -28,15 +23,15 @@ body {
 .side-icons{
     position: fixed;
     height: 100%;
-    background-color: #27ae60;
-    
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    display: none;
-    
-}
-.side-icons:hover{
+    /* background-color: #27ae60; */
     display: flex;
+    font-size: 15px;
+    
+    
+    
+    
 }
+
 
 ul {
     padding-left: 15px;
@@ -46,22 +41,17 @@ ul {
     gap: 2rem;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
 }
 
 a {
     text-decoration: none;
 }
-
-.sideIcons{
-    font-size: 25px;
-    padding: 10px;
-}
 .anchor {
     color: aliceblue;
     font-family: 'Roboto Slab', serif;
     display: inline-block;
-    
+    color: #27ae60;
     font-weight: 700;
     /* transition: all 0.5s; */
 }
@@ -69,14 +59,15 @@ a {
     /* color: #E26868; */
     /* background: radial-gradient(100px, #2f85f58c, transparent 50%); */
     text-decoration: none;
-    color: #27ae60;
+   
     border-radius: 25%;
 
 
 
 }
 li a i {
-    background-color: black;
+    background-color: #27ae60;
+    color: aliceblue;
     border-radius: 100%;
     padding: 12px;
     cursor: pointer;
@@ -84,7 +75,8 @@ li a i {
 
 }
 li a i:hover {
-    background-color: aliceblue;
+   transform: scale(1.3);
+   transition: 200ms;
 }
 
 @media (max-width:60rem){
@@ -109,7 +101,8 @@ li a i:hover {
         margin-bottom: 100px;
     }
     ul {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(23,28,35,0.8);
+    border: 2px solid aliceblue;
         border-radius: 50px;
         padding: 10px;
         display: flex;
@@ -183,7 +176,7 @@ li a i:hover {
     text-align: center;
     color: aliceblue;
     margin: 0;
-    font-size: 18px;
+    font-size: 25px;
 }
 .grid{
     display: grid;
@@ -192,6 +185,7 @@ li a i:hover {
     margin-left: 13rem;
     margin-right: 13rem;
     margin-top: 50px;
+    margin-bottom: 2rem;
 }
 .project-items{
     /* margin: 30px; */
@@ -199,8 +193,10 @@ li a i:hover {
     position: relative;
     font-family: "Poppins", sans-serif;
     
+    
 }
 img{
+    border: 2px solid aliceblue;
     box-sizing: border-box;
     border-radius: 15px;
     width: 100%;
@@ -213,6 +209,7 @@ img{
     position: absolute;
     top: 0;
     left: 0;
+    border: 2px solid aliceblue;
     background-color: #27ae60;
     width: 100%;
     height: 20rem;
@@ -229,6 +226,7 @@ img{
 .hover-item h3{
     font-size: 30px;
 }
+
 .icons .fa-brands{
     background-color: #001C30;
     font-size: 30px;
@@ -260,15 +258,10 @@ img{
     height: 20rem;
     border-radius: 15px;
     
-    background: #020101;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #302e2e, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #302e2e, #000000);
-   
+    background-color: #171c23;
     
     
-    border: 2px solid #302e2e;
+    border: 2px solid aliceblue;
 }
 .mini h3{
     margin-top: 60px;
@@ -302,6 +295,7 @@ img{
         margin-top: 50px;
         margin-left: 5rem;
         margin-right: 5rem;
+        
     }
     .hover-item h3{
         font-size: 25px;
