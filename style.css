@@ -12,12 +12,7 @@ body {
     overflow-x: hidden;
     /* overflow-y: scroll; */
     /* background-color: #071f30; */
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #302e2e, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #302e2e, #000000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #171c23;
     background-attachment: fixed;
 
 
@@ -55,7 +50,7 @@ a {
     justify-content: space-between;
     align-items: center;
     /* background-color:rgba(0,0,0,0.7); */
-    padding-left: 2rem;
+    padding-left: 3rem;
     padding-right: 2rem;
     position: relative;
 }
@@ -99,7 +94,7 @@ a {
 }
 
 li a i {
-    background-color: black;
+    background-color: #27ae60;
     border-radius: 100%;
     padding: 12px;
 
@@ -107,13 +102,17 @@ li a i {
 }
 
 li a i:hover {
-    background-color: #27ae60;
+    transform: scale(1.3);
+    transition: 200ms;
+
 }
 
 
+
 .heading {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
     
     /* transition: 0.5s; */
     /* background: radial-gradient(610px, #2f85f58c, transparent 10%); */
