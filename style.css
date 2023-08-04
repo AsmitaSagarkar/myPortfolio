@@ -236,10 +236,7 @@ li a i:hover {
         display: none;
     }
 
-    .navbar1 {
-        -webkit-backdrop-filter: blur(8px);
-        backdrop-filter: blur(8px);
-    }
+    
 }
 
 /* section 2 */
