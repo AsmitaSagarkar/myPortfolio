@@ -10,12 +10,7 @@ body {
     overflow-x: hidden;
     /* overflow-y: scroll; */
     /* background-color: #071f30; */
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #302e2e, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #302e2e, #000000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #171c23;
     background-attachment: fixed;
     font-family:"Poppins", sans-serif;
 
@@ -36,8 +31,8 @@ body {
     text-align: center;
     
     overflow: hidden;
-    padding-top: 50px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+   
     
 
 
@@ -45,6 +40,7 @@ body {
 .h1 h1{
     position: relative;
     z-index: 1;
+    margin-bottom: 0;
     
 }
 .bgtext{
@@ -73,7 +69,7 @@ body {
     width: 50%;
     height: 100%;
     background-color: #27ae60;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     z-index: 1;
@@ -122,7 +118,7 @@ body {
 .item li{
     list-style: none;
     text-decoration: none;
-    background-color: #000000;
+    background-color: #27ae60;
     padding: 10px;
     border-radius: 100%;
 }
@@ -130,10 +126,7 @@ body {
     color: aliceblue;
     
 }
-.item li:hover{
-    background-color: #27ae60;
-    border-radius: 100%;
-}
+
 
 @media (max-width:60rem){
     .item{
@@ -149,6 +142,7 @@ body {
     margin-bottom: 100px; */
     margin-left: 80px;
     margin-right: 80px;
+    margin-bottom: 80px;
     gap: 4rem;
 }
 
@@ -173,12 +167,14 @@ h1:hover{
 
 }
 .socialIcons{
-    background-color: #252323;
+    background-color: #171c23;
     width: auto;
-    padding: 50px;
+    height: auto;
+    padding: 25px;
+    /* padding: 50px;
     border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    box-shadow: 0 0 20px rgba(39, 174, 96, 0.5);
+    border-top-right-radius: 50px; */
+    box-shadow: 0 0 25px rgba(39, 174, 96, 0.5);
 }
 .img{
     width: 10rem;
@@ -262,7 +258,7 @@ h1:hover{
 }
 
 
-i:hover{
+.in i:hover{
     transform: scale(1.5);
     transition: 200ms ease;
     
@@ -276,20 +272,16 @@ i:hover{
 
 
 @media (max-width : 60rem){
-    body{
-        background: linear-gradient(to right, #272829 50%, #27ae60 50%);
-    }
+    
     
     .grid{
-        grid-template-rows: 0.5fr 1fr;
-    grid-template-columns: 1fr;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 100px;
-    margin-bottom: 200px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
     }
     img{
         z-index: 100;
+        height: 25rem;
     }
     h2{
         z-index: 101;
@@ -314,10 +306,10 @@ i:hover{
         gap: 20px;
     }
     .socialIcons{
-        padding: 20px;
+        padding: 8px;
     }
     .me{
-        color: rgba(2, 19, 11, 0.678);
+        color:#27ae60;
     }
     .iam{
         display: block;
