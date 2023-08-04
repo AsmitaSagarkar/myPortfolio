@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- aos library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- main stylesheet -->
     <link rel="stylesheet" href="projects.css">
@@ -39,7 +41,7 @@
             <p>Here is some of my projects that I've done in various programming languages.</p>
         </div>
         <div class="grid">
-            <div class="project-items">
+            <div class="project-items"data-aos="fade">
                 <div class="img">
                     <img src="images/portfolio.gif" alt="Loading image....">
                 </div>
@@ -61,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-items">
+            <div class="project-items"data-aos="fade">
                 <div class="img">
                     <img src="images/blog.gif" alt="Loading image....">
                 </div>
@@ -84,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="project-items">
+            <div class="project-items"data-aos="fade">
                 <div class="img">
                     <img src="images/notes.gif" alt="Loading image....">
                 </div>
@@ -107,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="project-items">
+            <div class="project-items"data-aos="fade">
                 <div class="img">
                     <img src="images/todolist.gif" alt="Loading image....">
                 </div>
@@ -130,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="project-items">
+            <div class="project-items"data-aos="fade">
                 <div class="img">
                     <img src="images/emoji.gif" alt="Loading image....">
                 </div>
@@ -153,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="project-items">
+            <div class="project-items"data-aos="fade">
                 <div class="img">
                     <img src="images/startup.gif" alt="Loading image....">
                 </div>
@@ -176,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="project-items">
+            <div class="project-items"data-aos="fade">
                 <div class="img">
                     <img src="images/weather.gif" alt="Loading image....">
                 </div>
@@ -200,7 +202,14 @@
             </div>
         </div>
     </div>
-
+    <!-- aos library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 200
+       
+      })
+    </script>
     <script src="projects.js"></script>
 
 

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- aos library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="intro.css">
 </head>
 
@@ -18,15 +20,15 @@
         <div class="heading"><span class="flicker">A</span><span>bo</span><span
                 class="flicker">u</span><span>t</span><span> Me</span><span class="flicker">!</span></div>
         <div class="bg"></div>
-        <img class="img" src="images/3dwoman.png" alt="">
+        <img class="img" data-aos="fade-right"src="images/3dwoman.png" alt="">
     </section>
     <section class="mid">
-        <div class="left">
+        <div class="left"data-aos="fade-right">
             <div class="leftinner">
                 <img src="images/aboutBg.png" alt="">
             </div>
         </div>
-        <div class="right">
+        <div class="right"data-aos="fade-left">
             <div class="rightinner">
                 <h2>Welcome to my world of passion and potential!🌟</h2>
                 <p>Greetings! I'm <span style="color: #27ae60;">Asmita Sagarkar</span>, a highly motivated <Span
@@ -54,7 +56,7 @@
         <p>Unlocking potential, one skill at a time - as a fresh and motivated <span style="color: #27ae60;">Front-End
                 Developer</span> enthusiast, I proudly present the foundations of my abilities, ready to take on new
             challenges and make a lasting impact.</p>
-        <div class="lastinner">
+        <div class="lastinner"data-aos="fade-right">
             <img src="images/c.png" alt="">
             <img src="images/c++.png" alt="">
             <img src="images/Java1.png" alt="">
@@ -74,7 +76,7 @@
 
 
     </section>
-    <footer>
+    <footer data-aos="fade-left">
         <p>Thank you for taking the time to get to know me!</p>
         <p style="color: #27ae60;">Quick links :</p>
 
@@ -91,7 +93,14 @@
 
     </footer>
 
-
+   <!-- aos library -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init({
+       delay: 200
+      
+     })
+   </script>
 </body>
 
 </html>

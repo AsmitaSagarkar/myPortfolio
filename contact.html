@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- aos library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <link rel="stylesheet" href="contact.css">
@@ -33,10 +35,10 @@
 
 
     <div class="grid">
-        <div class="left">
+        <div class="left"data-aos="fade-right">
          <img src="images/contactbg.png" alt="">
         </div>
-        <div class="right">
+        <div class="right"data-aos="fade-left">
             
             <div class="socialIcons">
                 <h1 class="info"><span class="text">L</span><span class="text">e</span><span class="text">t</span><span class="text">'</span><span class="text">s</span><span class="text"> C</span><span class="text">o</span><span class="text">n</span><span class="text">n</span><span class="text">e</span><span class="text">c</span><span class="text">t</span><span class="text">!</span></h1>
@@ -77,7 +79,14 @@
     </div>
    
 
-
+<!-- aos library -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    delay: 200
+   
+  })
+</script>
 
 
 
