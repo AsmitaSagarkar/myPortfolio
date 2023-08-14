@@ -49,7 +49,7 @@ linkedin.addEventListener("click",()=>{
 //resume
 const resume = document.querySelector("#resume");
 resume.addEventListener("click",()=>{
-    const url = "https://drive.google.com/file/d/1p5ZVhQAr6gnPuujCTYXJ42kexJl1e1t6/view";
+    const url = "https://drive.google.com/file/d/1Ukk0_8fhoWmphIogOds1lkAHdCJaZfyt/view?usp=sharing";
     resume.style.color = "#27ae60";
     setTimeout(() => {
         resume.style.color = "aliceblue";
