@@ -293,9 +293,7 @@ h1:hover{
     .name{
         font-size: 25px;
     }
-    .hshape{
-        display: none;
-    }
+    
     .name2{
         font-size: 25px;
     }
@@ -307,6 +305,7 @@ h1:hover{
     }
     .socialIcons{
         padding: 8px;
+        z-index: 99;
     }
     .me{
         color:#27ae60;
