@@ -79,7 +79,7 @@ btn1.addEventListener("click",()=>{
 
    
     // btn1.style.backgroundColor="#055e2a";
-    const url = "https://drive.google.com/file/d/1Ukk0_8fhoWmphIogOds1lkAHdCJaZfyt/view?usp=sharing";
+    const url = "https://drive.google.com/file/d/1feQrqfPEgfBONcozc1SyTZ5vEPcwPLH_/view?usp=sharing";
     setTimeout(() => {
     window.open(url,"_blank");
     // btn1.style.backgroundColor="transparent";
